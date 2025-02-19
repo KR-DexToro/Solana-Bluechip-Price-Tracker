@@ -6,9 +6,9 @@
 }
 
 body {
-    background: linear-gradient(45deg, #ff0000, #0000ff);
-    background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite; /* Add the animation for moving background */
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 15%, rgba(0, 0, 255, 0.8) 45%, rgba(0, 255, 0, 0.8) 70%, rgba(255, 255, 0, 0.8) 90%);
+    background-size: 200% 200%;
+    animation: meshGradientAnimation 8s ease infinite; /* Mesh gradient animation */
     color: white;
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -66,8 +66,8 @@ h1 {
     color: #4CAF50;
 }
 
-/* Keyframes for moving gradient background */
-@keyframes gradientAnimation {
+/* Keyframes for mesh gradient animation */
+@keyframes meshGradientAnimation {
     0% {
         background-position: 0% 50%;
     }
