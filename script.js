@@ -36,3 +36,4 @@ async function fetchTokenPrices() {
 fetchTokenPrices();
 setInterval(fetchTokenPrices, 5000);
 
+
