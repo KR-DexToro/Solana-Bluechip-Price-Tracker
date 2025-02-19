@@ -6,7 +6,9 @@
 }
 
 body {
-    background-color: #121212;
+    background: linear-gradient(45deg, #ff0000, #0000ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite; /* Add the animation for moving background */
     color: white;
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -62,4 +64,17 @@ h1 {
 .token-price {
     font-size: 16px;
     color: #4CAF50;
+}
+
+/* Keyframes for moving gradient background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
