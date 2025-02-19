@@ -1,0 +1,65 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Token Cards */
+.token-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.token-card {
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 15px;
+    border-radius: 10px;
+    width: 320px;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.token-card img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.token-info {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.token-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.token-price {
+    font-size: 16px;
+    color: #4CAF50;
+}
