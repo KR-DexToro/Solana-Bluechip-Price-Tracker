@@ -35,3 +35,4 @@ async function fetchTokenPrices() {
 // Fetch prices immediately & refresh every 5 seconds
 fetchTokenPrices();
 setInterval(fetchTokenPrices, 5000);
+
