@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeFi Data Dashboard</title>
+    <style>
+        /* Animated background from previous answer */
+        body { margin: 0; overflow: hidden; background: #0a0a0a; color: white; font-family: 'Inter', sans-serif; }
+        .background { position: fixed; width: 100%; height: 100%; z-index: -1; }
+        .gradient-animation { /* ... keep gradient animation styles ... */ }
+        .particles { /* ... keep particle styles ... */ }
+
+        /* Data display styles */
+        .container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .data-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .data-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .data-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .data-label {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .data-value {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+        }
+
+        .data-change {
+            color: #4CAF50;
+            font-size: 0.9rem;
+        }
+
+        .protocol-table {
+            width: 100%;
+            margin-top: 2rem;
+            border-collapse: collapse;
+        }
+
+        .protocol-table th,
+        .protocol-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .positive {
+            color: #4CAF50;
+        }
+
+        .negative {
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="background">
+        <div class="gradient-animation"></div>
+        <div class="particles"></div>
+    </div>
+
+    <div class="container">
+        <!-- Data Grid -->
+        <div class="data-grid">
+            <!-- USDs Section -->
+            <div class="data-card">
+                <div class="data-header">
+                    <h3>USDs</h3>
+                    <span class="data-label">Balance</span>
+                </div>
+                <div class="data-value">$0.00</div>
+                <button class="action-btn">Buy ↗</button>
+            </div>
+
+            <!-- Rewards Section -->
+            <div class="data-card">
+                <div class="data-header">
+                    <h3>Stream Rewards</h3>
+                    <span class="data-label">Per Day</span>
+                </div>
+                <div class="data-value">$0.00</div>
+                <div class="data-change positive">+0.00%</div>
+            </div>
+
+            <!-- LP Relations -->
+            <div class="data-card">
+                <div class="data-header">
+                    <h3>LP Relations</h3>
+                    <span class="data-label">Balance</span>
+                </div>
+                <div class="data-value">$0.00</div>
+                <button class="action-btn">Deposit ↗</button>
+            </div>
+
+            <!-- ENA Balances -->
+            <div class="data-card">
+                <div class="data-header">
+                    <h3>ENA Balance</h3>
+                    <span class="data-label">Available</span>
+                </div>
+                <div class="data-value">0.00 ENA</div>
+                <div class="data-change negative">-0.00%</div>
+            </div>
+        </div>
+
+        <!-- Protocol Table -->
+        <table class="protocol-table">
+            <thead>
+                <tr>
+                    <th>Asset</th>
+                    <th>Balance</th>
+                    <th>Value</th>
+                    <th>APY</th>
+                    <th>24h Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USDs</td>
+                    <td>0.00</td>
+                    <td>$0.00</td>
+                    <td class="positive">15.4%</td>
+                    <td class="positive">+0.00%</td>
+                </tr>
+                <tr>
+                    <td>ENA</td>
+                    <td>0.00</td>
+                    <td>$0.00</td>
+                    <td class="positive">12.1%</td>
+                    <td class="negative">-0.00%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- State Information -->
+        <div class="data-card" style="margin-top: 2rem;">
+            <h3>Protocol State</h3>
+            <p style="color: #888; margin-top: 1rem;">
+                ENA to begin running boosted rewards on non-ENA positions<br>
+                Unlocking period: 14 days (+7 day unshaking)
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Add particle animation code from previous example
+        // Add wallet connection logic from previous example
+        // Add real-time data updates here
+    </script>
+</body>
+</html>
